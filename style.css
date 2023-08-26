@@ -2,10 +2,51 @@
     margin: 0;
     padding : 0;
     box-sizing: border-box;
-    font-family: ;
+    font-family: spartan;
 
 }
 html, body {
     width: 100%;
     height: 100%;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3e3f3;
+    padding: 1rem;
+}
+.right-navbar{
+    display: flex;
+    font-weight: 600;
+    font-size:1rem;
+    padding-right: 5rem;
+}
+.right-navbar li{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    
+}
+.left-logo{
+    padding-left:3rem;
+}
+.right-navbar li a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+}
+.right-navbar li a:hover,
+.right-navbar li a.active{
+    color:#088178;
+}
+.right-navbar li a.active::after,.right-navbar li a:hover::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: #088178;
+    margin-left: 10px;
 }
